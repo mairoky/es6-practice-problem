@@ -6,5 +6,15 @@ b) Check if the length of each element is even, push elements
 with even length to a new array and return the result
 Print the result.
 */
+const friends = ['Shaon', 'Nath', 'Sujan', 'Jibon', 'Fahimu'];
 
-
+const newFriend = (friends) => {
+    const evenFriends = [];
+    for (const friend of friends) {
+        if (friend.length % 2 === 0) {
+            evenFriends.push(friend);
+        }
+    }
+    return evenFriends;
+}
+console.log(newFriend(friends));
